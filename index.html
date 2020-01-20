@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,38 +10,62 @@
 </head>
 
 <body>
-    <h1>Weekly Schedule</h1>
-    <table>
-        <caption>My Week</caption>
-        <tr style="background-color: darkred;">
-            <th></th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-            <th>Sunday</th>
-        </tr>
-        <tr>
-            <th>Morning</th>
-            <td style="background-color:midnightblue" colspan="5"> School</td>
-            <td style="background-color: olive;" rowspan="3">Family time</td>
-            <td style="background-color: olive;"rowspan="3">Family time</td>
-        </tr>
-        <tr>
-            <th>Afternoon</th>
-            <td style="background-color: midnightblue;" colspan="5" >School</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>Evening</th>
-            <td style="background-color: olive;" colspan="5">Family Time</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+    <Section>
+        <h1 class="topHeader">Weekly Schedule</h1>
+        <table>
+            <caption>My Week</caption>
+            <tr style="background-color: darkred;">
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <th>Morning</th>
+                <td style="background-color:midnightblue" colspan="5"> School</td>
+                <td style="background-color: olive;" rowspan="3">Family time</td>
+                <td style="background-color: olive;" rowspan="3">Family time</td>
+            </tr>
+            <tr>
+                <th>Afternoon</th>
+                <td style="background-color: midnightblue;" colspan="5">School</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Evening</th>
+                <td style="background-color: olive;" colspan="5">Family Time</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </Section>
+    <hr>
+    <hr>
+    <section>
+        <header>
+            <h1 class="topHeader">Please Give Us your Info</h1>
+        </header>
+        <article>
+           <label for="Username">Username</label> 
+           <input type="text" id="username" name="username" placeholder="Username">
+           <label for="Password">Password</label>
+           <input type="text" id="password" name="password" placeholder="Password">
+           <p>*We definitely will not sell your information*</p>
+           <input type="hidden" id="hiddeninput" name="hiddeninput" value="Super Secret">
+           <input type="submit" value="submit form" onclick="logMeIn">
+
+
+
+        </article>
+
+
+
+
 </body>
 
 </html>
