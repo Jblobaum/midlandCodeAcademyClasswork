@@ -1,6 +1,7 @@
 h1{
     text-align: center;
-color: lightseagreen;}
+color: lightseagreen;
+font-size: 48px;}
 
 th{
     background-color: coral;
@@ -19,5 +20,8 @@ td{
     border: whitesmoke 2px solid;
 padding: 4px;
 color: ivory;}
+
+caption{color: firebrick;
+font-size: 40px;}
 
 
