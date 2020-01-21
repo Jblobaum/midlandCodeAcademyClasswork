@@ -44,8 +44,10 @@
             </tr>
         </table>
     </Section>
+
     <hr>
     <hr>
+
     <section>
         <header>
             <h1 class="topHeader">Please Give Us Your Info</h1>
@@ -61,6 +63,7 @@
                 <input type="submit" value="submit form" onclick="logMeIn">
             </form>
         </article>
+
         <article>
             <form id="secondForm">
                 <fieldset>
@@ -72,6 +75,7 @@
                     <label for="Pin Number"> PIN</label>
                     <input type="text" id="pinNumber">
                 </fieldset>
+
                 <fieldset>
                     <legend>Favorite Type of Cheese</legend>
                     <input type="radio" id="cheeseType1" name="cheese" value="Cheddar">
@@ -81,6 +85,7 @@
                     <input type="radio" id="cheeseType3" name="cheese" value="Mozzarella" checked="checked">
                     <label for="cheeseType3">Mozzarella</label>
                 </fieldset>
+
                 <fieldset>
                     <legend>Favorite Types of Food</legend>
                     <input type="checkbox" id="favFood1" name="food" value="Italian" checked="checked">
@@ -90,22 +95,27 @@
                     <input type="checkbox" id="favFood3" name="food" value="Chinese">
                     <label for="favFood3">Chinese</label>
                 </fieldset>
-                <fieldset>
-                    <legend>Favorite Milk</legend>
-                    <label for="favoriteMilk">Favorite Milk</label>
-                    <select name="favoriteMilk" id="favoriteMilk">
-                        <optgroup> <label for="Dairy"></label>
-                            <option value="Skim">Skim</option>
-                            <option value="2%">2%</option>
-                            <option value="Whole">Whole</option>
-                        </optgroup>
-                        <optgroup> <label for="Non-Dairy"></label>
-                            <option value="Almond">Almond</option>
-                            <option value="Soy">Soy</option>
-                            <option value="Oat">Oat</option>
-                        </optgroup>
-                    </select>
-                </fieldset>
+
+                <label for="favoriteMilk">Favorite Milk</label>
+                <select name="favoriteMilk" id="favoriteMilk">
+                    <optgroup label="Dairy">
+                        <option value="Skim">Skim</option>
+                        <option value="2%">2%</option>
+                        <option value="Whole">Whole</option>
+                    </optgroup>
+                    <optgroup label="Non-Dairy">
+                        <option value="Almond">Almond</option>
+                        <option value="Soy">Soy</option>
+                        <option value="Oat">Oat</option>
+                    </optgroup>
+                </select>
+
+                <p>Did you mess up?</p>
+                <button onclick="document.getElementById('secondForm').reset()">Clear Form</button>
+
+                <p>Please, write us a poem.</p>
+                <label for="textArea">Your Poem Here</label>
+                <textarea name="textArea" class="container" cols="30" rows="10"></textarea>
             </form>
         </article>
 
