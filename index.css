@@ -1,5 +1,18 @@
-.topHeader{text-align: center;
+h1{
+    text-align: center;
 color: chartreuse;}
 
-.tableHeader{background-color: coral;
+th{
+    background-color: coral;
 color: cornflowerblue;}
+
+.table{
+    text-align: center;
+border-spacing: 0px;}
+
+body{
+    background-color: gray;}
+
+td{
+    border: whitesmoke 2px solid;
+padding: 4px;}

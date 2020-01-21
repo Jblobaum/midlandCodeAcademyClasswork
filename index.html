@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <Section>
-        <h1 class="topHeader">Weekly Schedule</h1>
+    <Section class="table">
+        <h1>Weekly Schedule</h1>
         <table>
             <caption>My Week</caption>
-                <th class="tableHeader"></th>
-                <th class="tableHeader">Monday</th>
-                <th class="tableHeader">Tuesday</th>
-                <th class="tableHeader">Wednesday</th>
-                <th class="tableHeader">Thursday</th>
-                <th class="tableHeader">Friday</th>
-                <th class="tableHeader">Saturday</th>
-                <th class="tableHeader">Sunday</th>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
             </tr>
             <tr>
                 <th>Morning</th>
@@ -58,23 +58,24 @@
                 <label for="Password">Password</label>
                 <input type="text" id="password" name="password" placeholder="Password">
                 <p>*We definitely will not sell your information*</p>
-                <input type="hidden" id="hiddeninput" name="hiddeninput" value="Super Secret">
-                <input type="submit" value="submit form" onclick="logMeIn">
+                <input type="hidden" id="hiddenInput" name="hiddenInput" value="Super Secret">
+                <input type="submit" value="Submit Form" onclick="logMeIn">
             </form>
         </article>
 
         <article>
-            <form id="secondForm">
-                <fieldset>
-                    <legend>Let's get Personal</legend>
-                    <label for="name"> Name</label>
-                    <input type="text" id="name">
-                    <label for="Social Security Number">SSN</label>
-                    <input type="text" id="socialSecurityNumber">
-                    <label for="Pin Number"> PIN</label>
-                    <input type="text" id="pinNumber">
-                </fieldset>
-
+            <form id="secondForm"></form>
+            <fieldset>
+                <legend>Let's get Personal</legend>
+                <label for="name"> Name</label>
+                <input type="text" id="name">
+                <label for="Social Security Number">SSN</label>
+                <input type="text" id="socialSecurityNumber">
+                <label for="Pin Number"> PIN</label>
+                <input type="text" id="pinNumber">
+            </fieldset>
+            <fieldset>
+                <legend>Culinary Interests</legend>
                 <fieldset>
                     <legend>Favorite Type of Cheese</legend>
                     <input type="radio" id="cheeseType1" name="cheese" value="Cheddar">
@@ -111,10 +112,13 @@
 
                 <p>Did you mess up?</p>
                 <button onclick="document.getElementById('secondForm').reset()">Clear Form</button>
+                <input type="hidden" name="hiddenInput" id="hiddenInput" value="superSecret">
+                <input type="submit" value="Submit Answers" onclick="">
 
                 <p>Please, write us a poem.</p>
                 <label for="textArea">Your Poem Here</label>
                 <textarea name="textArea" class="container" cols="30" rows="10"></textarea>
+            </fieldset>
             </form>
         </article>
 
