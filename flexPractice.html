@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Practice</title>
+    <style>
+        h1 {
+            line-height: 50px;
+            height: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .sml-fnt {
+            font-size: 15px;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .row-wrap {
+            flex-flow: row wrap;
+        }
+
+        .column-wrap {
+            flex-flow: column wrap;
+        }
+
+        .bg-box {
+            width: 100%;
+            height: 500px;
+        }
+
+        .sml-box {
+            min-height: 80px;
+            color: white;
+            border: 1px solid black;
+            margin: 5px;
+            flex: 1 1 30%;
+        }
+
+        .two-third {
+            flex: 1 1 calc((100% / 3) * 2);
+            margin: 10px 10px 10px 0px;
+        }
+
+        .one-third {
+            flex: 1 1 calc(100% / 3);
+            margin: 10px 0px 10px 10px;
+        }
+
+        .first {
+            order: 1;
+        }
+
+        .second {
+            order: 2;
+        }
+
+        .third {
+            order: 3;
+        }
+
+        .fourth {
+            order: 4;
+        }
+
+        .fifth {
+            order: 5;
+        }
+
+        .sixth {
+            order: 6;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="center">HEADER</h1>
+    <main class="bg-box flex">
+        <section class="two-third row-wrap flex">
+            <div class="first center sml-fnt blue sml-box">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Morbi maximus tortor at neque
+                faucibus
+                feugiat. Vestibulum lobortis efficitur ipsum vitae aliquet. Phasellus molestie aliquet metus id tempor.
+                Integer
+                vulputate ex ac dolor facilisis, in dignissim nunc eleifend. Sed et felis ligula.
+            </div>
+            <div class="third center sml-fnt blue sml-box">2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus tortor at neque
+                faucibus
+                feugiat. Vestibulum lobortis efficitur ipsum vitae aliquet. Phasellus molestie aliquet metus id tempor.
+                Integer
+                vulputate ex ac dolor facilisis, in dignissim nunc eleifend. Sed et felis ligula. Mauris eget nulla eros.
+                Aenean
+                pharetra semper lobortis. Donec rutrum sed justo suscipit pretium. Vestibulum scelerisque ornare ligula.</div>
+            <div class="sixth center sml-fnt blue sml-box">3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus tortor at neque
+                faucibus
+                feugiat. Vestibulum lobortis efficitur ipsum vitae aliquet.</div>
+            <div class="fifth center sml-fnt blue sml-box">4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus tortor at neque
+                faucibus
+                feugiat. Vestibulum lobortis efficitur ipsum vitae aliquet. Phasellus molestie aliquet metus id tempor.
+                Integer
+                vulputate ex ac dolor facilisis, in dignissim nunc eleifend. Sed et felis ligula. Mauris eget nulla eros.
+                Aenean
+                pharetra semper lobortis.</div>
+            <div class="fourth center sml-fnt blue sml-box">5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus tortor at neque
+                faucibus
+                feugiat. Vestibulum lobortis efficitur ipsum vitae aliquet. Phasellus molestie aliquet metus id tempor.
+                Integer
+                vulputate ex ac dolor facilisis, in dignissim nunc eleifend. Sed et felis ligula.</div>
+            <div class="second center sml-fnt blue sml-box">6. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus tortor at neque
+                faucibus
+                feugiat. Vestibulum lobortis efficitur ipsum vitae aliquet. Phasellus molestie aliquet metus id tempor.
+                Integer
+                vulputate ex ac dolor facilisis.</div>
+        </section>
+        <section class="one-third column-wrap flex">
+            <div class="third sml-fnt red center sml-box">1</div>
+            <div class="first sml-fnt red center sml-box">2</div>
+            <div class="second sml-fnt red center sml-box">3</div>
+        </section>
+    </main>
+
+
+
+
+    <h1 class="center">FOOTER</h1>
+</body>
+
+</html>
