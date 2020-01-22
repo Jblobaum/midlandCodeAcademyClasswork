@@ -18,7 +18,13 @@
 
         .container {
             width: calc(100% - 8px);
-            height: 500px;
+            height: 400px;
+            position: relative;
+        }
+
+        .container2 {
+            width: calc(100% - 8px);
+            height: 250px;
             position: relative;
         }
 
@@ -48,13 +54,17 @@
             font-family: 'Ubuntu', sans-serif;
         }
 
+        .center {
+            text-align: center;
+        }
+
         article {
             font-size: 30px;
             color: #14947f;
             font-family: 'Oswald', sans-serif;
         }
 
-        li {
+        .sml-font {
             font-size: 25px;
             font-family: 'Yanone Kaffeesatz', sans-serif;
             color: #5f9414;
@@ -70,8 +80,9 @@
         }
 
         .picture {
+            height: 400px;
             width: 800px;
-            border-radius: 20px;
+            border-radius: 60px;
             position: relative;
             left: calc(50% - 400px);
         }
@@ -85,46 +96,51 @@
         <img class="picture picture:hover" src="https://wallpaperplay.com/walls/full/f/4/d/42620.jpg"
             alt="Nebraska Cornhuskers">
     </div>
-    <div class="container">
+    <div class="container2">
         <div class="box">
             <article>My Interests:</article>
             <ul>
-                <li>The Nebraska Huskers and the Creighton Bluejays</li>
-                <li>Traveling and attending concerts</li>
-                <li>Spending time with my 2 boys, ages 4 and 7.</li>
-                <li>Cooking my favorite recipes.</li>
+                <li class="sml-font">The Nebraska Huskers and the Creighton Bluejays</li>
+                <li class="sml-font">Traveling for concerts</li>
+                <li class="sml-font">Spending time with my 2 boys, ages 4 and 7.</li>
+                <li class="sml-font">Cooking my favorite recipes.</li>
             </ul>
         </div>
         <div class="box box2">
             <nav>
                 <article>Some of my favorite recipes:</article>
                 <ul>
-                    <li class="hyperlink">
-                        <a href="http://www.gimmesomeoven.com/crispy-slow-cooker-carnitas/"></a>
-                        Slow Cooker Pork Carnitas
+                    <li>
+                        <a class="hyperlink sml-font" href="http://www.gimmesomeoven.com/crispy-slow-cooker-carnitas/"
+                            title="New Window" target="_blank">Slow Cooker Pork
+                            Carnitas</a>
                     </li>
-                    <li class="hyperlink">
-                        <a
-                            href="http://www.cookingchanneltv.com/recipes/alton-brown/reverse-sear-ribeye-steak-reloaded-5458694"></a>
-                        Alton Brown's Reverse Sear Steak
+                    <li>
+                        <a class="hyperlink sml-font"
+                            href="http://www.cookingchanneltv.com/recipes/alton-brown/reverse-sear-ribeye-steak-reloaded-5458694"
+                            title="New Window" target="_blank">Alton
+                            Brown's Reverse Sear Steak</a>
                     </li>
-                    <li class="hyperlink">
-                        <a href="http://www.bonappetit.com/recipe/cast-iron-pizza-with-fennel-and-sausage"></a>
-                        Cast Iron Pizza
+                    <li>
+                        <a class="hyperlink sml-font"
+                            href="http://www.bonappetit.com/recipe/cast-iron-pizza-with-fennel-and-sausage"
+                            title="New Window" target="_blank">Cast Iron
+                            Pizza</a>
                     </li>
-                    <li class="hyperlink">
-                        <a href="http://www.foodnetwork.com/recipes/food-network-kitchen/chicken-fettuccine-alfredo-3364118"></a>
-                        Chicken Fettuccine Alfredo
+                    <li>
+                        <a class="hyperlink sml-font"
+                            href="http://www.foodnetwork.com/recipes/food-network-kitchen/chicken-fettuccine-alfredo-3364118"
+                            title="New Window" target="_blank">Chicken
+                            Fettuccine Alfredo</a>
                     </li>
                 </ul>
             </nav>
         </div>
-
     </div>
-
-
-
-
+    <hr>
+    <p class="center sml-font">Please send all inquires to:</p>
+    <p class="center sml-font">Justin Blobaum</p>
+    <a class="center" href="mailto:justin.blobaum@midlandu.edu">justin.blobaum@midlandu.edu</a>
 </body>
 
 </html>
