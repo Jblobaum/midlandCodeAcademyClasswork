@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>About Me</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -15,37 +18,89 @@
 
         .container {
             width: calc(100% - 8px);
-            height: 500px position: relative;
+            height: 500px;
+            position: relative;
+        }
+
+        .box {
+            width: 300px;
+            height: 500px;
+            display: inline-block;
+        }
+
+        .box2{
+            position: absolute;
+            left: calc(100% - 300px);
         }
 
         .header {
             text-align: center;
             color: #14947f;
-            font-family: 'Raleway', sans-serif;
         }
 
         .big-font {
             font-size: 55px;
+            font-family: 'Raleway', sans-serif;
         }
 
         .med-font {
             font-size: 35px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        ul {
+            font-size: 30px;
+            color: #14947f;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        li {
+            font-size: 25px;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            color: #5f9414;
+        }
+
+        .hyperlink:hover{
+            color: orange;
+        }
+        }
+
+        .picture:hover {
+            border: white;
         }
 
         .picture {
+            width: 800px;
             border-radius: 20px;
             position: relative;
-            left: 50%;
+            left: calc(50% - 400px);
         }
     </style>
 </head>
 
 <body>
-    <h1 class="header big-font">Justin D. Blobaum</h1>
-    <h2 class="header med-font">Independent Contractor</h2>
+    <h1 class="header big-font">Justin Blobaum</h1>
+    <h2 class="header med-font">Future Developer</h2>
     <div class="container">
-        <img class="picture" src="https://wallpaperplay.com/walls/full/f/4/d/42620.jpg" alt="Nebraska Cornhuskers"
-            width="500px">
+        <img class="picture picture:hover" src="https://wallpaperplay.com/walls/full/f/4/d/42620.jpg"
+            alt="Nebraska Cornhuskers">
+    </div>
+    <div class="container">
+        <div class="box">
+            <ul>Facts about Me:
+                <li>I was a managaer at Panera Bread for 9 years.</li>
+                <li>I am hardworking, dependable, and a quick learner.</li>
+                <li>I am a father of 2 boys, ages 4 and 7.</li>
+                <li>I love to cook.</li>
+            </ul>
+        </div>
+        <div class="box box2">
+            <ul>Some of my favorite recipes:</ul>
+            <li class="hyperlink">
+                <a href="https://www.gimmesomeoven.com/crispy-slow-cooker-carnitas/" target="_blank" title="New Window"></a>Slow Cooker Pork Carnitas
+            </li>
+
+        </div>
 
     </div>
 
