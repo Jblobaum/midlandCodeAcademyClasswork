@@ -23,14 +23,14 @@
         }
 
         .box {
-            width: 300px;
+            width: 400px;
             height: 500px;
             display: inline-block;
         }
 
-        .box2{
+        .box2 {
             position: absolute;
-            left: calc(100% - 300px);
+            left: calc(100% - 400px);
         }
 
         .header {
@@ -48,7 +48,7 @@
             font-family: 'Ubuntu', sans-serif;
         }
 
-        ul {
+        article {
             font-size: 30px;
             color: #14947f;
             font-family: 'Oswald', sans-serif;
@@ -60,7 +60,7 @@
             color: #5f9414;
         }
 
-        .hyperlink:hover{
+        .hyperlink:hover {
             color: orange;
         }
         }
@@ -87,19 +87,37 @@
     </div>
     <div class="container">
         <div class="box">
-            <ul>Facts about Me:
-                <li>I was a managaer at Panera Bread for 9 years.</li>
-                <li>I am hardworking, dependable, and a quick learner.</li>
-                <li>I am a father of 2 boys, ages 4 and 7.</li>
-                <li>I love to cook.</li>
+            <article>My Interests:</article>
+            <ul>
+                <li>The Nebraska Huskers and the Creighton Bluejays</li>
+                <li>Traveling and attending concerts</li>
+                <li>Spending time with my 2 boys, ages 4 and 7.</li>
+                <li>Cooking my favorite recipes.</li>
             </ul>
         </div>
         <div class="box box2">
-            <ul>Some of my favorite recipes:</ul>
-            <li class="hyperlink">
-                <a href="https://www.gimmesomeoven.com/crispy-slow-cooker-carnitas/" target="_blank" title="New Window"></a>Slow Cooker Pork Carnitas
-            </li>
-
+            <nav>
+                <article>Some of my favorite recipes:</article>
+                <ul>
+                    <li class="hyperlink">
+                        <a href="http://www.gimmesomeoven.com/crispy-slow-cooker-carnitas/"></a>
+                        Slow Cooker Pork Carnitas
+                    </li>
+                    <li class="hyperlink">
+                        <a
+                            href="http://www.cookingchanneltv.com/recipes/alton-brown/reverse-sear-ribeye-steak-reloaded-5458694"></a>
+                        Alton Brown's Reverse Sear Steak
+                    </li>
+                    <li class="hyperlink">
+                        <a href="http://www.bonappetit.com/recipe/cast-iron-pizza-with-fennel-and-sausage"></a>
+                        Cast Iron Pizza
+                    </li>
+                    <li class="hyperlink">
+                        <a href="http://www.foodnetwork.com/recipes/food-network-kitchen/chicken-fettuccine-alfredo-3364118"></a>
+                        Chicken Fettuccine Alfredo
+                    </li>
+                </ul>
+            </nav>
         </div>
 
     </div>
