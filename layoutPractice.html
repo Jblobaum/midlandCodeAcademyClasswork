@@ -16,14 +16,35 @@
             font-size: 2rem;
             text-align: end;
         }
-        .min-height{
+
+        .min-height-rem {
             min-height: 2rem;
+            !important
         }
-        .txt-height-small{
+
+        .fnt-color-white {
+            color: white;
+        }
+
+        .min-height-px {
+            min-height: 100px;
+        }
+
+        .txt-height-small {
             font-size: .8rem;
         }
-        .border-right{
+
+        .border-right {
             border-right: 2px white;
+        }
+
+        .max-height {
+            max-height: 100px;
+        }
+
+        .bkgd-img-reptng {
+            background-image: url(https://i.picsum.photos/id/641/100/100.jpg);
+            background-repeat: repeat-x;
         }
     </style>
 </head>
@@ -31,10 +52,10 @@
 <body>
     <header class="header">
         <div class="container-fluid d-flex align-items-center row">
-            <div class="container d-flex justify-content-start col-4">
+            <div class="container d-flex justify-content-sm-start col-4">
                 <img class="img-fluid" src="https://i.picsum.photos/id/431/100/100.jpg" alt="Hungry Bear Picture">
             </div>
-            <div class="container col-8">
+            <div class="container-fluid justify-content-sm-end col-8">
                 <article>HUNGRY BEAR FISHERIES</article>
             </div>
         </div>
@@ -65,8 +86,9 @@
     </nav>
     <main class="container-fluid d-flex p-2 flex-sm-row flex-sm-wrap">
         <section class="container-fluid col">
-            <div class="container">
-                <ul>Currently Available
+            <div class="container-fluid">
+                <ul>
+                    <strong>Currently Available</strong>
                     <li>Atlantic Salmon</li>
                     <li>Coho Salmon</li>
                     <li>Chinook Salmon</li>
@@ -77,38 +99,39 @@
                 <pre></pre>
             </div>
         </section>
-        <section class="col-8 container-fluid d-flex p-2 flex-sm-column flex-sm-wrap min-height">
-            <div class="container d-flex txt-height-small">
-                <img class="border-right" src="https://i.picsum.photos/id/696/100/100.jpg" alt="Salmon Pic 1">Lorem ipsum
+        <section class="col-8 container-fluid d-sm-flex p-2 flex-sm-column flex-sm-wrap min-height">
+            <div class="container-fluid d-sm-flex p-2 txt-height-small">
+                <img class="max-height" src="https://i.picsum.photos/id/696/100/100.jpg" alt="Salmon Pic 1">Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit. Aliquam porta arcu ut eros elementum fringilla. Phasellus
                 molestie diam non molestie tincidunt. In finibus finibus augue sed sollicitudin. In viverra mattis nisl,
                 et interdum arcu volutpat vel. Curabitur egestas eros vel laoreet sollicitudin. Nulla viverra felis vel
                 dui cursus, laoreet congue leo lacinia. Fusce elementum ipsum sit amet vulputate ullamcorper. Phasellus
                 eu faucibus lacus. Mauris eros lacus, tincidunt ut metus et, euismod tempus magna.
             </div>
-            <div class="container d-flex min-height txt-height-small">
-                <img class="img-fluid" src="https://i.picsum.photos/id/201/100/100.jpg" alt="Salmon Pic 2">Lorem ipsum
+            <div class="container-fluid d-sm-flex min-height txt-height-small">
+                <img class="max-height" src="https://i.picsum.photos/id/201/100/100.jpg" alt="Salmon Pic 2">Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit. Aliquam porta arcu ut eros elementum fringilla. Phasellus
                 molestie diam non molestie tincidunt. In finibus finibus augue sed sollicitudin. In viverra mattis nisl,
                 et interdum arcu volutpat vel. Curabitur egestas eros vel laoreet sollicitudin. Nulla viverra felis vel
                 dui cursus, laoreet congue leo lacinia. Fusce elementum ipsum sit amet vulputate ullamcorper. Phasellus
                 eu faucibus lacus. Mauris eros lacus, tincidunt ut metus et, euismod tempus magna.
             </div>
-            <div class="container d-flex min-height txt-height-small">
-                <img class="img-fluid" src="https://i.picsum.photos/id/696/100/100.jpg" alt="Salmon Pic 3">Lorem ipsum
+            <div class="container-fluid d-sm-flex min-height txt-height-small">
+                <img class="max-height" src="https://i.picsum.photos/id/696/100/100.jpg" alt="Salmon Pic 3">Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit. Aliquam porta arcu ut eros elementum fringilla. Phasellus
                 molestie diam non molestie tincidunt. In finibus finibus augue sed sollicitudin. In viverra mattis nisl,
                 et interdum arcu volutpat vel. Curabitur egestas eros vel laoreet sollicitudin. Nulla viverra felis vel
                 dui cursus, laoreet congue leo lacinia. Fusce elementum ipsum sit amet vulputate ullamcorper. Phasellus
                 eu faucibus lacus. Mauris eros lacus, tincidunt ut metus et, euismod tempus magna.
             </div>
-
         </section>
-
-
-
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div
+            class="container-fluid d-flex bkgd-img-reptng min-height-px justify-content-center align-items-sm-center 
+            min-height-rem fnt-color-white">
+            Only the Freshest Fish Around</div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
