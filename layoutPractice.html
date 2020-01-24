@@ -19,7 +19,7 @@
 
         .min-height-rem {
             min-height: 2rem;
-            !important
+             !important
         }
 
         .fnt-color-white {
@@ -46,11 +46,15 @@
             background-image: url(https://i.picsum.photos/id/641/100/100.jpg);
             background-repeat: repeat-x;
         }
+
+        .list-style-circle {
+            list-style-type: circle;
+        }
     </style>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container-fluid d-sm-flex">
         <div class="container-fluid d-flex align-items-center row">
             <div class="container d-flex justify-content-sm-start col-4">
                 <img class="img-fluid" src="https://i.picsum.photos/id/431/100/100.jpg" alt="Hungry Bear Picture">
@@ -85,9 +89,9 @@
         </section>
     </nav>
     <main class="container-fluid d-flex p-2 flex-sm-row flex-sm-wrap">
-        <section class="container-fluid col">
+        <section class="container-fluid col-4">
             <div class="container-fluid">
-                <ul>
+                <ul class="list-style-circle">
                     <strong>Currently Available</strong>
                     <li>Atlantic Salmon</li>
                     <li>Coho Salmon</li>
@@ -127,8 +131,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div
-            class="container-fluid d-flex bkgd-img-reptng min-height-px justify-content-center align-items-sm-center 
+        <div class="container-fluid d-flex bkgd-img-reptng min-height-px justify-content-center align-items-sm-center 
             min-height-rem fnt-color-white">
             Only the Freshest Fish Around</div>
     </footer>
