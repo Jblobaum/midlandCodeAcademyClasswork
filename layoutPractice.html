@@ -10,61 +10,99 @@
     <title>Layout Practice</title>
     <style>
         .header {
-            height: 100px;
             background-color: grey;
             text-shadow: 2px 2px black;
             color: white;
-            font-size: 35px;
+            font-size: 2rem;
             text-align: end;
-            padding-right: 50px;
-            line-height: 100px;
         }
-
-        .top-image {
-            min-height: 100px;
-            width: 150px;
-            float: left;
+        .min-height{
+            min-height: 2rem;
+        }
+        .txt-height-small{
+            font-size: .8rem;
+        }
+        .border-right{
+            border-right: 2px white;
         }
     </style>
 </head>
 
 <body>
     <header class="header">
-        <img class="top-image"
-            src="https://d3i6fh83elv35t.cloudfront.net/static/2018/11/fat-bears_GettyImages-966223700-1200x800.jpg"
-            alt="Hungry Bear Picture">
-        HUNGRY BEAR FISHERIES</header>
+        <div class="container-fluid d-flex align-items-center row">
+            <div class="container d-flex justify-content-start col-4">
+                <img class="img-fluid" src="https://i.picsum.photos/id/431/100/100.jpg" alt="Hungry Bear Picture">
+            </div>
+            <div class="container col-8">
+                <article>HUNGRY BEAR FISHERIES</article>
+            </div>
+        </div>
+
+    </header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
+        <section class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0 nav-fill w-100">
+                <div class="nav-item active">
                     <a class="nav-link" href="Our Fish">Our Fish</a>
-                </li>
-                <li class="nav-item active">
+                </div>
+                <div class="nav-item active">
                     <a class="nav-link" href="Conservation">Conservation</a>
-                </li>
-                <li class="nav-item active">
+                </div>
+                <div class="nav-item active">
                     <a class="nav-link" href="About Us">About Us</a>
-                </li>
-                <li>
-                    <a class="nav-link active" href="Contact Us">Contact Us</a>
-                </li>
-            </ul>
+                </div>
+                <div class="nav-item active">
+                    <a class="nav-link" href="Contact Us">Contact Us</a>
+                </div>
+            </div>
             <form class="form-inline my-2 my-lg-0"></form>
-        </div>
-    </nav>
-    <main>
-        <section>
-
         </section>
-        <section>
-            <article></article>
-            <article></article>
-            <article></article>
+    </nav>
+    <main class="container-fluid d-flex p-2 flex-sm-row flex-sm-wrap">
+        <section class="container-fluid col">
+            <div class="container">
+                <ul>Currently Available
+                    <li>Atlantic Salmon</li>
+                    <li>Coho Salmon</li>
+                    <li>Chinook Salmon</li>
+                    <li>Sockeye Salmon</li>
+                    <li>Pink Salmon</li>
+                    <li>Rainbow Trout</li>
+                </ul>
+                <pre></pre>
+            </div>
+        </section>
+        <section class="col-8 container-fluid d-flex p-2 flex-sm-column flex-sm-wrap min-height">
+            <div class="container d-flex txt-height-small">
+                <img class="border-right" src="https://i.picsum.photos/id/696/100/100.jpg" alt="Salmon Pic 1">Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Aliquam porta arcu ut eros elementum fringilla. Phasellus
+                molestie diam non molestie tincidunt. In finibus finibus augue sed sollicitudin. In viverra mattis nisl,
+                et interdum arcu volutpat vel. Curabitur egestas eros vel laoreet sollicitudin. Nulla viverra felis vel
+                dui cursus, laoreet congue leo lacinia. Fusce elementum ipsum sit amet vulputate ullamcorper. Phasellus
+                eu faucibus lacus. Mauris eros lacus, tincidunt ut metus et, euismod tempus magna.
+            </div>
+            <div class="container d-flex min-height txt-height-small">
+                <img class="img-fluid" src="https://i.picsum.photos/id/201/100/100.jpg" alt="Salmon Pic 2">Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Aliquam porta arcu ut eros elementum fringilla. Phasellus
+                molestie diam non molestie tincidunt. In finibus finibus augue sed sollicitudin. In viverra mattis nisl,
+                et interdum arcu volutpat vel. Curabitur egestas eros vel laoreet sollicitudin. Nulla viverra felis vel
+                dui cursus, laoreet congue leo lacinia. Fusce elementum ipsum sit amet vulputate ullamcorper. Phasellus
+                eu faucibus lacus. Mauris eros lacus, tincidunt ut metus et, euismod tempus magna.
+            </div>
+            <div class="container d-flex min-height txt-height-small">
+                <img class="img-fluid" src="https://i.picsum.photos/id/696/100/100.jpg" alt="Salmon Pic 3">Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Aliquam porta arcu ut eros elementum fringilla. Phasellus
+                molestie diam non molestie tincidunt. In finibus finibus augue sed sollicitudin. In viverra mattis nisl,
+                et interdum arcu volutpat vel. Curabitur egestas eros vel laoreet sollicitudin. Nulla viverra felis vel
+                dui cursus, laoreet congue leo lacinia. Fusce elementum ipsum sit amet vulputate ullamcorper. Phasellus
+                eu faucibus lacus. Mauris eros lacus, tincidunt ut metus et, euismod tempus magna.
+            </div>
+
         </section>
 
 
