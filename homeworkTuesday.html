@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tuesday Homework</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000" ;></canvas>
+    <script>
+        // number 1
+        function splitPizza(pizza, slices) {
+            let remainingSlices = slices % pizza;
+            if (remainingSlices === 0) {
+                console.log("Slices are split evenly");
+
+            } else {
+                console.log(pizza - remainingSlices);
+            }
+        }
+        // splitPizza(2,8)
+
+        // Number 2
+
+        function rightTriangle(sideA = 1, sideB = 1, sideC = 1) {
+            if (sideA * sideA === (sideB * sideB) + (sideC * sideC)) {
+                console.log("This is a right triangle");
+
+            } else {
+                console.log("This is NOT a right triangle");
+            }
+        }
+
+        // rightTriangle(5, 3, 4)
+        // rightTriangle(6,3,3)
+
+        // Number 3
+        // let monDamage = [4, 3, 7, 8, 5, 4]
+        // let heroHealth = 33
+        // let totalDamage = monDamage.reduce((a, b) => a + b, 0)
+
+        // console.log(totalDamage);
+
+        // if (totalDamage - heroHealth < 0){
+        //     console.log("The Hero Survives!");
+
+        // }else{console.log("The Hero Dies :/");
+        // }
+
+
+        // Number 4
+        let x1 = 100;
+        let y1 = 100;
+        let x2 = 100;
+        let y2 = 50;
+        let x3 = 50;
+        let y3 = 50;
+        let x4 = 50;
+        let y4 = 100
+        
+        
+
+
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.moveTo(x1,y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+        ctx.moveTo(x2, y2);
+        ctx.lineTo(x3, y3);
+        ctx.stroke();
+        ctx.moveTo(x3, y3);
+        ctx.lineTo(x4, y4);
+        ctx.stroke();
+        ctx.moveTo(x4, y4);
+        ctx.lineTo(x1, y1);
+        ctx.stroke();
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>classworkTuesday</title>
+</head>
+
+<body>
+    <script>
+
+        // Number 1
+        function absoluteValue(num) {
+            if (num < 0) {
+                num = num * -1;
+            }
+            console.log(num);
+        }
+
+        // absoluteValue(-20)
+        // absoluteValue(20)
+        // absoluteValue(0)
+
+        // Number 2
+        function pow(x = 1, y = 1) {
+
+            let ans = x;
+            for (y; y >= 0; y--) {
+                ans = ans * x;
+
+            }
+            console.log(ans);
+
+        }
+        // pow(2, 4)
+        // pow(8,9)
+
+        // Number 3
+        function palindrome(word = (" ")) {
+            let lowerWord = word.toLowerCase();
+            let oppositeWord = lowerWord.split('').reverse().join('')
+            if (lowerWord == oppositeWord) {
+                console.log(`${word} is a palindrome`);
+
+            } else (console.log(`${word} is not a palindrome`));
+
+        }
+        // palindrome("Racecar")
+        // palindrome("gary")
+        // palindrome("KayAk")
+
+        // Number 4
+        let banned = ["government", "strike", "drone"]
+        let test = ["girl", "boy", "government", "dog", "strike", "drone"]
+        function bannedWords(a, b) {
+            b = b.slice()
+            for (i = 0; i < a.length; i++) {
+
+                for (j = 0; j < b.length; j++) {
+
+                    if (a[i] == b[j]) {
+                        b[j] = "REDACTED";
+
+                    }
+
+                }
+            } return (b);
+
+        }
+        // console.log(bannedWords(banned, test), test)
+
+
+
+        // Number 5
+        function fizzBuzz(num1 = 1, num2 = 2) {
+            if (num1 === num2) {
+                return
+            }
+            if (num1 > num2) {
+                for (i = num2; i <= num1; i++) {
+                    if (i % 6 === 0) {
+                        console.log(`${i}, "FIZZBUZZ"`);
+                    }
+                    else if (i % 3 === 0) {
+                        console.log(`${i}, "BUZZ"`);
+                    }
+                    else if (i % 2 === 0) {
+                        console.log(`${i}, "FIZZ"`);
+                    }
+                }
+            }
+            if (num1 < num2) {
+                for (i = num2; i >= num1; i--) {
+                    if (i % 6 === 0) {
+                        console.log(`${i}, "FIZZBUZZ"`);
+                    }
+                    else if (i % 3 === 0) {
+                        console.log(`${i}, "BUZZ"`);
+                    }
+                    else if (i % 2 === 0) {
+                        console.log(`${i}, "FIZZ"`);
+                    }
+                }
+            }
+        }
+        // fizzBuzz(5,22)
+        // fizzBuzz(18,1)
+        // fizzBuzz(18,18)
+
+
+        // Number 6
+        let date = new Date(prompt("Please enter a date (MM DD YYYY"));
+        let dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+        function dayFinder(date) {
+            // console.log(day);
+            console.log(dayOfWeek[date.getDay()]);
+
+        }
+        dayFinder(date)
+
+
+        // Number 2 (recursive)
+
+
+    </script>
+
+</body>
+
+</html>
