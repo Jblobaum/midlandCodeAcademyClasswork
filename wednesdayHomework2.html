@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        .activeClass {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="div1"></div>
+    <div class="box" id="div2"></div>
+    <div class="box" id="div3"></div>
+    <div class="box" id="div4"></div>
+
+    <script>
+        let array;
+
+        function arrayMachine() {
+            array = document.querySelectorAll(".box");
+            array = Array.from(array);
+            // console.log(array);
+
+            function shuffle(array) {
+                var i = array.length, k, temp;
+                while (--i > 0) {
+                    k = Math.floor(Math.random() * (i + 1));
+                    temp = array[k];
+                    array[k] = array[i];
+                    array[i] = temp;
+                }
+                return (array);
+            }
+            // console.log(array);
+            
+            array = shuffle(array);
+            // console.log(array);
+            
+            repeatDivs()
+            // console.log(array);
+        }
+
+        
+
+        function repeatDivs() {
+
+
+            array[0].classList.add("activeClass");
+
+            window.setTimeout(function () {
+
+                array[0].classList.remove("activeClass");
+
+                array.shift();
+
+                if (array.length > 0) {
+
+                    window.setTimeout(repeatDivs, 250)
+
+                } else {
+                    window.setTimeout(arrayMachine, 1000)
+                }
+
+            }, 500)
+        }
+        arrayMachine()
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+//
+<!-- shuffle, set active for 2sec, remove active, new active after 500ms, when array is empty stop  -->

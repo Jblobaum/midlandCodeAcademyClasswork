@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .div {
+            margin: auto;
+            height: 300px;
+            width: 500px;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 150px;
+            line-height: 300px;
+
+        }
+
+        .greenBackground{
+            background-color: green;
+        }
+
+        .redBackground{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="div greenBackground" id="clock"></div>
+
+
+    <script>
+        let time = parseInt(prompt("Please enter a amount seconds."));
+        let element = document.getElementById("clock");
+        element.innerText = time
+
+        let timer = window.setInterval(function(){
+            time--;
+            element.innerText = time;
+            if(time === 0){
+                window.clearInterval(timer);
+                element.classList.remove("greenBackground")
+                element.classList.add("redBackground")
+            }
+        }, 1000);
+
+
+
+
+    </script>
+</body>
+
+</html>
