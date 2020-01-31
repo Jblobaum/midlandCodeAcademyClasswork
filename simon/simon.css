@@ -1,0 +1,32 @@
+.red {
+    background-color: red;
+}
+
+
+.green {
+    background-color: green;
+}
+
+
+
+.yellow {
+    background-color: yellow;
+}
+
+
+.blue {
+    background-color: blue;
+}
+
+.active{
+    opacity: 0.5;
+}
+
+#red,
+#yellow,
+#green,
+#blue {
+    height: 250px;
+    width: 47%;
+    display: inline-block;
+}
